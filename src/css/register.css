@@ -30,7 +30,7 @@ input {
 }
 
 button {
-  background-color: #d63384;
+  background-color: #29dd38;
   color: white;
   border: none;
   padding: 0.75rem;
@@ -39,12 +39,12 @@ button {
 }
 
 button:hover {
-  background-color: #c2186a;
+  background-color: #29dd38;
 }
 
 .volver {
   display: block;
   margin-top: 1rem;
   text-decoration: none;
-  color: #d63384;
+  color: #f00b04;
 }

@@ -1,63 +1,76 @@
 {
-    "products":[
-        {
-            "id": 1,
-            "name": "Air One",
-            "size": 38,
-            "price": 90,
-            "image": "../src/image/Nike_air_Force_1w.webp",
-            "stock": 10
-        },
-        {
-            "id": 2,
-            "name": "Air Force 1",
-            "size": 38,
-            "price": 90,
-            "image": "../src/image/Nike_air_Force_1w.webp",
-            "stock": 10
-        }
-        ,
-        {
-            "id": 3,
-            "name": "Air Max",
-            "size": 38,
-            "price": 90,
-            "image": "../src/image/Nike_air_Max.webp",
-            "stock": 10
-        },
-        {
-            "id": 4,
-            "name": "Air Jordan",
-            "size": 38,
-            "price": 90,
-            "image": "../src/image/Nike_air_Jordan.webp",
-            "stock": 10
-        }
-        ,
-        {
-            "id": 5,
-            "name": "Air Zoom",
-            "size": 38,
-            "price": 90,
-            "image": "../src/image/Nike_air_Zoom.webp",
-            "stock": 10
-        }
-        ,
-        {            "id": 6,
-            "name": "Air Presto",
-            "size": 38,             
-            "price": 90,
-            "image": "../src/image/Nike_air_Force_1w.webp",
-            "stock": 10
-        }
-    ]
-    ,
-    "users": {
-            "id": 1,
-            "name": "Johandry",
-            "email": "johandry200@gmail.com",
-            "password": "123456",
-            "role": "admin"
-            } 
-        
+  "users": [
+    {
+      "id": "1",
+      "name": "Johandry",
+      "email": "johandry200@gmail.com",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "juan",
+      "email": "juan@hotmail.com",
+      "password": "123456",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Air One",
+      "size": 38,
+      "price": 90,
+      "image": "../src/image/Nike_air_Force_1w.webp",
+      "stock": 10
+    },
+    {
+      "id": "2",
+      "name": "Air Force 1",
+      "size": 38,
+      "price": 90,
+      "image": "../src/image/Nike_air_Force_1w.webp",
+      "stock": 10
+    },
+    {
+      "id": "3",
+      "name": "Air Max",
+      "size": 38,
+      "price": 90,
+      "image": "../src/image/Nike_air_Max.webp",
+      "stock": 10
+    },
+    {
+      "id": "4",
+      "name": "Air Jordan",
+      "size": 38,
+      "price": 90,
+      "image": "../src/image/Nike_air_Jordan.webp",
+      "stock": 10
+    },
+    {
+      "id": "5",
+      "name": "Air Zoom",
+      "size": 38,
+      "price": 90,
+      "image": "../src/image/Nike_air_Zoom.webp",
+      "stock": 10
+    },
+    {
+      "id": "6",
+      "name": "Air Presto",
+      "size": 38,
+      "price": 90,
+      "image": "../src/image/Nike_air_Force_1w.webp",
+      "stock": 10
+    },
+    {
+      "id": "be3a",
+      "name": "manga",
+      "price": 3000,
+      "image": "data:image/jpeg;base64,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",
+      "size": "12",
+      "stock": 121
+    }
+  ]
 }

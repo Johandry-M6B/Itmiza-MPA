@@ -1,5 +1,5 @@
 import { checkSessionForAuth } from "./main.js";
-
+import { USERS } from "./main.js";
 checkSessionForAuth("../../index.html");
 
 const $loginForm = document.getElementById("login-form");
@@ -13,22 +13,35 @@ $loginForm.addEventListener("submit", function (event) {
 
 async function login() {
   const encodedEmail = encodeURIComponent($email.value);
-  let response = await fetch(
-    `http://localhost:3000/users?email=${encodedEmail}`
+  const response = await fetch(
+    `${USERS}?email=${encodedEmail}`
   );
-  let data = await response.json();
+  const data = await response.json();
 
-  if (data.length != 1) {
+  if (data.length === 0) {
     alert("lThe account does not exist, I invite you to register");
     return;
   }
 
-  if (data[0].password === $password.value) {
-    localStorage.setItem("currentUser", JSON.stringify(data[0]));
-    window.location.href = "../views/post.html";
-  } else {
-    alert("Wrong credentials, please try again");
+  const user = data[0];
+
+   if (user.password !== $password.value) {
+    alert("Incorrect password");
+    return;
   }
+
+  localStorage.setItem("currentUser", JSON.stringify(user));
+
+  if(user.role === "admin") {
+    window.location.href = "/src/views/post.html";
+  }else{
+    window.location.href = "/index.html";
+  }
+
+  
+  
+
+ 
 
   console.log("Email:", $email.value);
   console.log("Respuesta del servidor:", data);

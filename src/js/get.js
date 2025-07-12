@@ -13,7 +13,7 @@ export async function loadProducts() {
         showProduct();
     } catch (error) {
         console.error('Error:', error);
-        document.getElementById("shoea-list").innerHTML = `
+        document.getElementById("shoes-list").innerHTML = `
         <div class="error">Error loading products: ${error.message}</div>`;
         
     };
@@ -21,10 +21,10 @@ export async function loadProducts() {
 
 export async function showProduct() {
  const shoesList = document.getElementById("shoes-list")
- shoesList.innerHTML = "";
+ shoesList.innerHTML = ""
 
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-  console,log("Current User:", currentUser);
+  console.log("Current User:", currentUser);
 
   const isAdmin = currentUser && currentUser.role === "admin";
   console.log("Is Admin:", isAdmin);

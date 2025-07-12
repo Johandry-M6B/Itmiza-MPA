@@ -9,24 +9,23 @@
   </head>
   <body>
     <header>
-
       <nav>
         <ul>
           <li><a href="/src/views/login.html">Login</a></li>
           <li><a href="./index.html">Home</a></li>
           <li> <a href="/src/views/register.html" class="btn">Register</a></li>
-          <script>
-            document.addEventListener('DOMContentLoaded',() =>{
-              const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-              if(currentUser && currentUser.role === "admin"){
-                const nav = document.querySelector("nav ul");
-                const adminItem = document.createElement("li");
-                adminItem.innerHTML = `<a href="/src/views/post.html">Admin Control</a>`;
-                nav.insertBefore(adminItem,nav.children[1]);
-                }
-            });
-          </script>  
         </ul>
+        <script>
+          document.addEventListener('DOMContentLoaded',() =>{
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+            if(currentUser && currentUser.role === "admin"){
+              const nav = document.querySelector("nav ul");
+              const adminItem = document.createElement("li");
+              adminItem.innerHTML = `<a href="/src/views/post.html">Admin Control</a>`;
+              nav.insertBefore(adminItem,nav.children[1]);
+              }
+          });
+        </script>  
       </nav>
       <h1>Itmiza</h1>
     </header>
@@ -44,7 +43,8 @@
       
       <nav>
       <a href="./index.html"><h2>Itmiza</h2></a>
-    </nav></footer>
+    </nav>
+  </footer>
 
     <script type="module" src="./src/js/get.js"></script>
   </body>

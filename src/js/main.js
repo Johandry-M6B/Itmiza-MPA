@@ -1,9 +1,8 @@
 
 
-export const USERS = "http://localhost:3000/users"
+export const USERS = "http://localhost:3001/users"
 
-export const API_URL = "http://localhost:3000/products";
-
+export const API_URL = "http://localhost:3001/products";
 
 export function checkSessionForAuth(route) {
     let currentUser = JSON.parse(localStorage.getItem("currentUser")) 

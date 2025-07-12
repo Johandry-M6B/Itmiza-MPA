@@ -1,4 +1,4 @@
-import {USERS} from "../js/main"
+import { USERS } from "../../index.html"
 
 const $registerForm = document.getElementById("register-form")
 const $fullName = document.getElementById("full-name")
