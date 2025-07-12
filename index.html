@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Itmiza</title>
+  </head>
+  <body>
+    <header>
+
+      <nav>
+        <ul>
+          <li><a href="/src/views/login.html">Login</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li> <a href="/src/views/register.html" class="btn">Register</a></li>
+          <script>
+            document.addEventListener('DOMContentLoaded',() =>{
+              const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+              if(currentUser && currentUser.role === "admin"){
+                const nav = document.querySelector("nav ul");
+                const adminItem = document.createElement("li");
+                adminItem.innerHTML = `<a href="/src/views/post.html">Admin Control</a>`;
+                nav.insertBefore(adminItem,nav.children[1]);
+                }
+            });
+          </script>  
+        </ul>
+      </nav>
+      <h1>Itmiza</h1>
+    </header>
+    <main>
+      <h2>Shoes</h2>
+      <div id="container">
+
+        <div id="shoes-list">
+
+
+        </div>
+      </div>
+    </main>
+    <footer>
+      
+      <nav>
+      <a href="./index.html"><h2>Itmiza</h2></a>
+    </nav></footer>
+
+    <script type="module" src="./src/js/get.js"></script>
+  </body>
+</html>

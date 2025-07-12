@@ -1,0 +1,63 @@
+{
+    "products":[
+        {
+            "id": 1,
+            "name": "Air One",
+            "size": 38,
+            "price": 90,
+            "image": "../src/image/Nike_air_Force_1w.webp",
+            "stock": 10
+        },
+        {
+            "id": 2,
+            "name": "Air Force 1",
+            "size": 38,
+            "price": 90,
+            "image": "../src/image/Nike_air_Force_1w.webp",
+            "stock": 10
+        }
+        ,
+        {
+            "id": 3,
+            "name": "Air Max",
+            "size": 38,
+            "price": 90,
+            "image": "../src/image/Nike_air_Max.webp",
+            "stock": 10
+        },
+        {
+            "id": 4,
+            "name": "Air Jordan",
+            "size": 38,
+            "price": 90,
+            "image": "../src/image/Nike_air_Jordan.webp",
+            "stock": 10
+        }
+        ,
+        {
+            "id": 5,
+            "name": "Air Zoom",
+            "size": 38,
+            "price": 90,
+            "image": "../src/image/Nike_air_Zoom.webp",
+            "stock": 10
+        }
+        ,
+        {            "id": 6,
+            "name": "Air Presto",
+            "size": 38,             
+            "price": 90,
+            "image": "../src/image/Nike_air_Force_1w.webp",
+            "stock": 10
+        }
+    ]
+    ,
+    "users": {
+            "id": 1,
+            "name": "Johandry",
+            "email": "johandry200@gmail.com",
+            "password": "123456",
+            "role": "admin"
+            } 
+        
+}

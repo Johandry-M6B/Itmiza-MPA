@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* header styles */
+header{
+    background-color: #4CAF50; 
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+}
+header h1 {
+    margin: 0;
+    width: 70%;
+    display: flex;
+    text-align: center;
+    justify-content:start;
+    align-items: center;
+    padding:0 250px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 5.5rem;
+}
+header nav {
+    width: 30%;
+    display: flex;
+    justify-content:flex-start;
+    align-items:start;
+    gap: 20px;
+    font-size: 1.5rem;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    gap: 10px; 
+    list-style: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 20px;
+    list-style: none;
+}
+/* main styles */
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 100px);
+    display: grid;
+}
+
+#shoes-list {
+   display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.col-md-4 {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.col-md-4 img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.col-md-4 h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+.col-md-4 p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+.col-md-4 button {
+    background-color: #4CAF50;
+    color: white;               
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.col-md-4 button:hover {
+    background-color: #45a049;
+}           
+
+
+
+/* footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
